@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:streamingapp/controller/video_handle_controller.dart';
 import 'package:streamingapp/screen/answer_screen.dart';
 import 'package:streamingapp/screen/video_play_screen.dart';
 
@@ -21,6 +22,8 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
+
+  var videoController= Get.put(VideoHandleController());
 
   var videoList= [
     'assets/videoone.mp4',
@@ -75,6 +78,7 @@ class _MainPageState extends State<MainPage> {
                   ),
                 ),
                 onTap: (){
+                  videoController.countPlayBack.value= 0;
                   Get.to(VideoPlayScreen(), arguments: videoList[index]);
                 },
               );

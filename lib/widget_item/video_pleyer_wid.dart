@@ -47,10 +47,10 @@ class VideoPlayerWidget extends StatelessWidget {
 
             TextButton(
               onPressed: (){
-                if(countPlayBack == 0){
+                if(videoHandlerController.countPlayBack.value == 0){
                   playBackPopUpDialog(context);
                 }
-                countPlayBack= 1;
+                videoHandlerController.countPlayBack.value= 1;
                 videoPlaced((currentPosition) => currentPosition - const Duration(seconds: 5));
               },
               child: const Icon(

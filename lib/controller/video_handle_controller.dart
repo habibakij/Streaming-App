@@ -9,6 +9,7 @@ class VideoHandleController extends GetxController {
   }
 
   RxBool idPlayVideo= true.obs;
+  RxInt countPlayBack= 0.obs;
   RxList selectDialogList= [].obs;
 
 }
