@@ -22,8 +22,7 @@ screenshot
 
 build apk link
 
-https://we.tl/t-0F0k6PSR0e
-
+https://we.tl/t-xyATWrC5iv
 
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
