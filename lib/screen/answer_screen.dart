@@ -13,8 +13,8 @@ class AnswerScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Dialog Answer List",),
       ),
-      body: videoHandlerController.selectDialogList.isEmpty ? Container(
-        child: const Text("Empty"),
+      body: videoHandlerController.selectDialogList.isEmpty ? const Center(
+        child: Text("Empty", style: TextStyle(fontSize: 18)),
       ) : Obx(() => ListView.builder(
         itemCount: videoHandlerController.selectDialogList.length,
         shrinkWrap: true,
